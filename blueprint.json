@@ -1,0 +1,22 @@
+{
+  "steps": [
+    
+    {
+      "step": "installTheme",
+      "themeData": {
+        "resource": "wordpress.org/themes",
+        "slug": "twentytwentyfive"
+      }
+    },
+
+    {
+      "step": "installPlugin",
+      "pluginData": {
+        "resource": "wordpress.org/plugins",
+        "slug": "woocommerce"
+      }
+    }
+
+  ]
+  
+}
