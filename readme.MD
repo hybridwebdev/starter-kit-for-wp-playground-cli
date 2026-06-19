@@ -75,17 +75,12 @@ You can Edit `serve.json` to modify settings used when ```run wp:serve``` is cal
 {
   "steps": [
     {
-      "step": "installTheme",
-      "themeData": {
-        "resource": "wordpress.org/themes",
-        "slug": "twentytwentyfive"
-      }
-    },
-    {
-      "step": "installPlugin",
-      "pluginData": {
-        "resource": "wordpress.org/plugins",
-        "slug": "woocommerce"
+      "step": "defineWpConfigConsts",
+      "consts": {
+        "WP_DEBUG": true,
+        "WP_DEBUG_LOG": true,
+        "WP_DEBUG_DISPLAY": true,
+        "WP_DISABLE_FATAL_ERROR_HANDLER": true
       }
     }
   ]
