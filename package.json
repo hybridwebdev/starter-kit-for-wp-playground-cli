@@ -1,7 +1,7 @@
 {
     "scripts": {
         "wp:init": "mkdir htdocs",
-        "wp:install": "npx @wp-playground/cli run-blueprint --blueprint=./blueprint.json --mount-before-install=./htdocs:/wordpress",
-        "wp:serve": "npx @wp-playground/cli server --mount=./htdocs:/wordpress"
+        "wp:install": "npx @wp-playground/cli run-blueprint --blueprint=./install.json --mount-before-install=./htdocs:/wordpress",
+        "wp:serve": "npx @wp-playground/cli server --mount=./htdocs:/wordpress --blueprint=debug.json"
     }
 }

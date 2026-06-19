@@ -46,7 +46,30 @@ The WordPress site will be available locally. Check the CLI output for the acces
 
 ### Customize Your WordPress Setup
 
-Edit `blueprint.json` to modify what gets installed:
+Edit `install.json` to modify what gets installed:
+
+```json
+{
+  "steps": [
+    {
+      "step": "installTheme",
+      "themeData": {
+        "resource": "wordpress.org/themes",
+        "slug": "twentytwentyfive"
+      }
+    },
+    {
+      "step": "installPlugin",
+      "pluginData": {
+        "resource": "wordpress.org/plugins",
+        "slug": "woocommerce"
+      }
+    }
+  ]
+}
+```
+
+You can Edit `serve.json` to modify settings used when ```run wp:serve``` is called:
 
 ```json
 {
